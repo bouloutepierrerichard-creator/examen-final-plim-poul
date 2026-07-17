@@ -171,3 +171,140 @@ nav ul li a:hover{
     to {opacity: 1;transform: translateY(0);}
 }
 @media
+
+
+{}.contact-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 8%;
+    gap: 50px;
+    min-height: 85vh;
+}
+
+
+.contact-info {
+    flex: 1;
+    animation: slideInLeft 1s ease-out;
+}
+
+.contact-info h2 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contact-info h2 span {
+    color: #ff6f00;
+}
+
+.contact-info .subtitle {
+    color: #aaaaaa;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.info-box {
+    background-color: #111111;
+    padding: 20px;
+    border-left: 4px solid #ff6f00; 
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.info-box h3 {
+    font-size: 1.2rem;
+    color: #ff6f00;
+    margin-bottom: 5px;
+}
+
+.info-box p {
+    color: #eeeeee;
+    font-size: 1rem;
+}
+
+
+.contact-form-container {
+    flex: 1;
+    background-color: #111111;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    animation: fadeUp 1.2s ease-out;
+}
+
+.contact-form-container h2 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact-form-container h2 span {
+    color: #ff6f00;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #cccccc;
+}
+
+.input-group input, 
+.input-group textarea {
+    padding: 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    outline: none;
+    border-color: #ff6f00;
+}
+
+
+.btn-submit {
+    padding: 14px;
+    background-color: #ff6f00;
+    color: #ffffff;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE POU TELEFÒN (KONTAK) */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+    .contact-form-container {
+        width: 100%;
+        padding: 25px;
+    }
+}
