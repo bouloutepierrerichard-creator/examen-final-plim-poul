@@ -13,6 +13,10 @@
 body{
     background-color: #1a1a1a;
     color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 .navigation{
     display: flex;
@@ -128,7 +132,8 @@ nav ul li a:hover{
     border: 1px solid #333;
     border-radius: 15px;
     padding: 20px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     text-align: left;
     position: relative;
     transition: transform 0.3s ease,border-color 0.3s ease;
@@ -459,13 +464,15 @@ nav ul li a:hover{
     .contact-info, 
     .contact-form-container {
         width: 100%;
+        box-sizing: border-box;
     }
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .section {
         padding: 40px 5%;
+        box-sizing: border-box;
     }
 
     .section-text h1 {
@@ -711,6 +718,7 @@ footer#contact a:hover {
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
+    box-sizing: border-box;
   }
 
   
@@ -726,6 +734,7 @@ footer#contact a:hover {
   header, nav {
     padding-left: 10px !important;
     padding-right: 10px !important;
+    box-sizing: border-box;
   }
 
   
@@ -812,7 +821,7 @@ footer#contact a:hover {
 
 
   .prix {
-    position: static !important; /* Retire tout posiblite pou l al chita deyò kat la */
+    position: static !important; 
     margin-top: 10px !important;
     font-weight: bold !important;
     color: #ff6b00 !important;
